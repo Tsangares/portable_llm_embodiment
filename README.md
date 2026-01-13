@@ -26,6 +26,7 @@ python -u run_system_prompts.py
 
 - `all_prompts.json` - Input system prompts (283 prompts)
 - `run_system_prompts.py` - Main script
+- `validate_results.py` - Validates output files
 - `requirements.txt` - Dependencies
 
 ## Output
@@ -35,3 +36,12 @@ Generates `prisoners_dilemma_notes_<timestamp>.csv` with columns:
 - `note` - LLM's reasoning
 - `prompt` - System prompt used
 - `model` - Model name
+
+## Validation
+
+Run `validate_results.py` to check output files:
+```bash
+python validate_results.py
+```
+
+Prints summary for each result file (model, row count, confession rate).
