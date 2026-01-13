@@ -87,7 +87,7 @@ completed_prompts = list(completed_prompts[completed_prompts['count']>= N]['prom
 print(f"We have {len(completed_prompts)} prompts completed")
 
 
-for i,system_prompt in enumerate(prompts[:5]):
+for i,system_prompt in enumerate(prompts):
     start_time = time.time()
     
     print(f"\nRunning Prompt [{i+1}/{TOTAL_PROMPTS}]: {str(system_prompt)[:100]}")
