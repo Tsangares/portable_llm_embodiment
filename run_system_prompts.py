@@ -12,7 +12,7 @@ from ollama import Client
 MODEL = "qwen2.5:14b-multi"
 HOST = "10.0.0.99"
 PORT = "11434"
-N = 2
+N = 50
 INPUT_FILE = "all_prompts.json"
 OUTPUT_FILE = f"prisoners_dilemma_notes_{int(time.time())}.csv" #Added in time to make each output unique for each model
 CACHE_FILE = "cache.json"
